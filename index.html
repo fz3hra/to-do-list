@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./code/style.css">
+    <script async src="https://kit.fontawesome.com/3c8d729e68.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- first part -->
+    <div class="header">
+        <div class="headerimg">
+            <div class="img"></div>
+        </div>
+        <div class="todoapp">
+            <!-- title and icon -->
+            <div class="toDoHeader">
+                <div class="headertitle">
+                    <h1>to do</h1>
+                    <div class="toggle">
+                        <i onclick="toggleBtn(this)" class="fas fa-moon night"  ></i>
+                        <!-- <i class="fas fa-certificate day"></i> -->
+                    </div>
+                    <!-- entering task -->
+                    <div class="addTask">
+                        <input type="text" placeholder="create a new todo" id="inputText">
+                    </div>
+                </div>
+            </div>
+            <!-- creating task -->
+            <div class="toDoTask saveData" style="display: none;" id="toDoTask">
+                <!-- <p>hi</p> -->
+               <!-- where item will be added when enter is pressed -->
+            </div>
+            <div class="filter">
+                <!-- all, active, complete -->
+                <!-- <div class="filterAll"><button value="all">All</button></div>
+                <div class="filterActive"><button value="Active">Active</button></div>
+                <div class="filterCompleted"><button value="Completed">Completed</button></div> -->
+                <div class="filterToDo">
+                    <p class="all">All</p>
+                    <p class="active">Active</p>
+                    <p class="complete">Completed</p>
+                    <p class="clearCompleted">Clear completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- middle -->
+    <!-- where states are found -> all active completed. -->
+    <script src="./code/app.js"></script>
+</body>
+</html>
+
